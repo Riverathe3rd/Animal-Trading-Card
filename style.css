@@ -13,8 +13,18 @@ img {
     padding: 0px 0px 20px;
 }
 
+.sleeve {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+
 .card {
     width: 300px;
+    height: 800px;
     padding: 10px 20px 20px;
     border-radius: 25px;
     border-style: solid;
@@ -22,6 +32,7 @@ img {
     size: 5px;
     box-shadow: 3px 5px 5px gray;
     background-color: rgb(34, 34, 34);
+    margin: 0px 20px;
 }
 
 .content {
@@ -44,4 +55,38 @@ li {
 
 ul {
     padding-inline-start: 0%;
+}
+
+@media (max-width: 576px) {
+    .card {
+        width: 300px;
+        height: 800px;
+        padding: 10px 20px 20px;
+        border-radius: 25px;
+        border-style: solid;
+        border-color: rgb(182, 182, 182);
+        size: 5px;
+        box-shadow: 3px 5px 5px gray;
+        background-color: rgb(34, 34, 34);
+        margin: 20px;
+    }
+
+    body {
+        background-color: darkgrey;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: 300px;
+        height: 800px;
+        padding: 10px 20px 20px;
+        border-radius: 25px;
+        border-style: solid;
+        border-color: rgb(182, 182, 182);
+        size: 5px;
+        box-shadow: 3px 5px 5px gray;
+        background-color: rgb(34, 34, 34);
+        margin: 20px;
+    }
 }
